@@ -8,7 +8,7 @@ export default function Homepage() {
       <div className="homepage__header">
         <MovingComponent
           type="fadeIn"
-          duration="4000ms"
+          duration="8000ms"
           delay="0s"
           direction="normal"
           timing="ease"
