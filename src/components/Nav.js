@@ -1,29 +1,46 @@
-import React from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import "./Nav.css";
 import logo from "../assets/logo.png";
 import hamburger from "../assets/menu-2.svg";
+import useOutsideClick from "../hooks/useOutsideClick.js";
+import useCloseOnEsc from '../hooks/useCloseOnEsc';
 
 export default function Nav() {
-  return (
-    <div className="nav__section">
-        <div className="nav__logo__wrapper">
-            <a href="#homepage">
-                <img src={logo} className="nav__logo" />
-            </a>
+    const [expandMenu, setExpandMenu] = useState(false);
+    const ref = useRef();
+
+    const handleHamburgerClick = () => {
+        setExpandMenu(prevExpandMenu => !prevExpandMenu);
+    }
+
+    useOutsideClick(ref, () => setExpandMenu(false));
+    useCloseOnEsc(() => setExpandMenu(false));
+
+    useEffect(() => {
+        window.matchMedia("(max-width: 600px)").addEventListener("change", () => setExpandMenu(false));
+    }, []);
+
+    return (
+        <div className="nav__section">
+            <div className="nav__logo__wrapper">
+                <a href="#homepage">
+                    <img src={logo} className="nav__logo" />
+                </a>
+            </div>
+            <nav>
+                <button className="nav__hamburger__wrapper" onClick={handleHamburgerClick}>
+                    <img src={hamburger} className="nav__hamburger"/>
+                </button>
+                <div className={expandMenu ? "nav__links nav__links__active" : "nav__links"} ref={ref}>
+                    <a href="#homepage" onClick={expandMenu ? handleHamburgerClick : undefined}>Home</a>
+                    <a href="#portfolio" onClick={expandMenu ? handleHamburgerClick : undefined}>Portfolio</a>
+                    <a href="#productintro" onClick={expandMenu ? handleHamburgerClick : undefined}>Product</a>
+                    <a href="#reviews" onClick={expandMenu ? handleHamburgerClick : undefined}>Reviews</a>
+                    <a href="#aboutus" onClick={expandMenu ? handleHamburgerClick : undefined}>About</a>
+                    <a href="#contact" onClick={expandMenu ? handleHamburgerClick : undefined}>Contact</a>
+                </div>
+                <div className={expandMenu ? "nav__links__bg" : ""}></div>
+            </nav>
         </div>
-        <nav>
-            <div>
-                <img src={hamburger} className="nav__hamburger"/>
-            </div>
-            <div className="nav__links">
-                <a href="#homepage">Home</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#productintro">Product</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#aboutus">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </div>
-  )
+    )
 }
