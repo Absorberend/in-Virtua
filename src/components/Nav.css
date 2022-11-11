@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 580px) {
     .nav__section {
-        padding: 0.5em 1.25em 0.5em 0.75em;
+        padding: 0.5em 0em 0.5em 1.25em;
         justify-content: flex-start;
         gap: 3em;
     }
