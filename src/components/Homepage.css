@@ -1,0 +1,21 @@
+.homepage__section {
+    background-image: url("../assets/homepage-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.homepage__section * {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
