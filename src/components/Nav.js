@@ -32,12 +32,12 @@ export default function Nav() {
                     <img src={hamburger} className="nav__hamburger"/>
                 </button>
                 <div className={expandMenu ? "nav__links nav__links__active" : "nav__links"} ref={ref}>
-                    <a href="#homepage" onClick={expandMenu ? handleHamburgerClick : undefined}>Home</a>
-                    <a href="#portfolio" onClick={expandMenu ? handleHamburgerClick : undefined}>Portfolio</a>
-                    <a href="#productintro" onClick={expandMenu ? handleHamburgerClick : undefined}>Product</a>
-                    <a href="#reviews" onClick={expandMenu ? handleHamburgerClick : undefined}>Reviews</a>
-                    <a href="#aboutus" onClick={expandMenu ? handleHamburgerClick : undefined}>About</a>
-                    <a href="#contact" onClick={expandMenu ? handleHamburgerClick : undefined}>Contact</a>
+                    <a href="#homepage" onClick={expandMenu ? handleHamburgerClick : undefined} className="nav__link">Home</a>
+                    <a href="#portfolio" onClick={expandMenu ? handleHamburgerClick : undefined} className="nav__link">Portfolio</a>
+                    <a href="#productintro" onClick={expandMenu ? handleHamburgerClick : undefined} className="nav__link">Product</a>
+                    <a href="#reviews" onClick={expandMenu ? handleHamburgerClick : undefined} className="nav__link">Reviews</a>
+                    <a href="#aboutus" onClick={expandMenu ? handleHamburgerClick : undefined} className="nav__link">About</a>
+                    <a href="#contact" onClick={expandMenu ? handleHamburgerClick : undefined} className="nav__link">Contact</a>
                 </div>
                 <div className={expandMenu ? "nav__links__bg" : ""}></div>
             </nav>

@@ -75,7 +75,21 @@
     background-color: rgba(34,34,34,255);
     z-index: 5;
 }
-    
+
+.nav__link::after {
+    margin: 0 auto;
+    content: '';
+    width: 0px;
+    height: 1.5px;
+    display: block;
+    background: #c6b893;
+    transition: 500ms;
+}
+  
+.nav__link:hover::after {
+    width: 13%;
+}
+
 
 @media screen and (min-width: 600px) {
     nav {
@@ -95,5 +109,9 @@
     
     .nav__links {
         display: flex;
+    }
+
+    .nav__link:hover::after {
+        width: 100%;
     }
 }
