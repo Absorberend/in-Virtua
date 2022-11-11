@@ -7,9 +7,11 @@ import Reviews from "./components/Reviews";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
+import React from 'react';
 
 
 function App() {
+
 
   return (
     <>

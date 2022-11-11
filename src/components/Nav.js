@@ -20,6 +20,7 @@ export default function Nav() {
         window.matchMedia("(max-width: 600px)").addEventListener("change", () => setExpandMenu(false));
     }, []);
 
+
     return (
         <div className="nav__section">
             <div className="nav__logo__wrapper">
