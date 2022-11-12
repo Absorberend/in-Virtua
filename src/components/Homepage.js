@@ -17,7 +17,7 @@ export default function Homepage({expandMenu, onHamburgerClick}) {
           fillMode="none">
           <h1>People. Together.</h1>
           <h2>Share your special moments</h2>
-          <a href="#portfolio" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">Portfolio</a>
+          {/* <a href="#portfolio" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">Portfolio</a> */}
         </MovingComponent>
       </div>
     </section>

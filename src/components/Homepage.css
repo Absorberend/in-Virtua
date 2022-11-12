@@ -9,7 +9,7 @@
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
-    margin-block-end: 0.04em;
+    margin-block-end: 0.1em;
 }
 
 .homepage__section * {

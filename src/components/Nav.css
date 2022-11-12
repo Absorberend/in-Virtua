@@ -5,7 +5,7 @@
 .nav__section {
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 999;
     height: 4.75em;
     display: flex;
     justify-content: space-between;
