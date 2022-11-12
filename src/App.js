@@ -7,19 +7,27 @@ import Reviews from "./components/Reviews";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
-import React from 'react';
+import React, {useState} from 'react';
 
 
 function App() {
+  const [expandMenu, setExpandMenu] = useState(false);
 
+  const handleHamburgerClick = () => {
+    setExpandMenu(prevExpandMenu => !prevExpandMenu);
+  }
+
+  const handleCloseMenu = () => {
+    setExpandMenu(false);
+  }
 
   return (
     <>
       <header>
-        <Nav />
+        <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu} />
       </header>
       <main className="main__content">
-        <Homepage />
+        <Homepage expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} />
         <Portfolio />
         <ProductIntro />
         <Reviews />
