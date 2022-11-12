@@ -11,8 +11,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.7em;
+}
+
+.nav__section__vis {
     background-color: rgba(34,34,34,255);
     box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.nav__section__invis {
+    background-color: inherit;
+    box-shadow: none;
 }
 
 .nav__logo__wrapper {

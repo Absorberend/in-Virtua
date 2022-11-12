@@ -3,6 +3,7 @@ import './Homepage.css';
 import MovingComponent from 'react-moving-text';
 
 export default function Homepage({expandMenu, onHamburgerClick}) {
+
   return (
     <section className="homepage__section" id="homepage">
       <div className="homepage__header">

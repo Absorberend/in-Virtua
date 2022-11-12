@@ -11,7 +11,21 @@ body {
 .main__content {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   height: 100vh;
+}
+
+.main__content::-webkit-scrollbar {
+  display: none;
+}
+
+
+.main__content div > section {
+  height: 100vh;
+  padding-block-start: 4.75em;
+  scroll-snap-align: start;
 }
 
 .main__content > section {

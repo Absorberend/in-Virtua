@@ -7,11 +7,15 @@ import Reviews from "./components/Reviews";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
+import useOnScreen from './hooks/useOnScreen';
 
 
 function App() {
   const [expandMenu, setExpandMenu] = useState(false);
+  const [inView, setInView] = useState(false);
+  const ref = useRef();
+  const isVisible = useOnScreen(ref)
 
   const handleHamburgerClick = () => {
     setExpandMenu(prevExpandMenu => !prevExpandMenu);
@@ -21,14 +25,25 @@ function App() {
     setExpandMenu(false);
   }
 
+  useEffect(() => {
+    if (isVisible) {
+      setInView(true);
+    } else {
+      setInView(false);
+    }
+  }, [isVisible])
+
+
   return (
     <>
       <header>
-        <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu} />
+        <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu} inView={inView} />
       </header>
-      <main className="main__content">
-        <Homepage expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} />
-        <Portfolio />
+      <main className="main__content" >
+        <div ref={ref}>
+          <Homepage expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick}/>
+        </div>
+        <Portfolio/>
         <ProductIntro />
         <Reviews />
         <AboutUs />
