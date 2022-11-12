@@ -19,7 +19,7 @@ export default function Nav({expandMenu, onHamburgerClick, onCloseMenu, inView})
 
 
     return (
-        <div className={inView ? "nav__section nav__section__invis" : "nav__section nav__section__vis"}>
+        <div className={inView && !expandMenu ? "nav__section nav__section__invis" : "nav__section nav__section__vis"}>
             <div className="nav__logo__wrapper">
                 <a href="#homepage">
                     <img src={logo} className="nav__logo" alt="logo"/>
