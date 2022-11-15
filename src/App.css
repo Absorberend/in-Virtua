@@ -43,3 +43,7 @@ body {
   padding-block-start: 4.75em;
   scroll-snap-align: start;
 }
+
+.main__content > section:nth-child(2) {
+  height: 200vh;
+}

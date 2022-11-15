@@ -3,9 +3,6 @@
     width: 100%;
     margin: 0 auto;
     padding: 2em;
-    overflow: scroll;
-    overflow-y: auto;
-    overflow-x: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
