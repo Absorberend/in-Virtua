@@ -27,6 +27,7 @@
 }
 
 .portfolio__header {
+    color: #CCCCCC;
     font-size: 2.75em;
     font-weight: 500;
     width: 100%;
@@ -41,7 +42,7 @@
 
 .portfolio__wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     justify-self: center;
     align-items: center;
@@ -53,22 +54,35 @@
 }
 
 .portfolio__video__wrapper {
-    overflow: hidden;
-    width: 90%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    flex: 0.5;
+    gap: 2em;
     margin: 0 auto;
     padding-block-start: 3em;
+}
+
+.portfolio__video__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 1em;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.portfolio__video {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
 }
 
 video {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    border: 1px solid black;
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio__button {
@@ -77,10 +91,31 @@ video {
     margin: 0 auto;
     background-color: rgba(34,34,34,255);
     box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
-    border: 2px solid #c6b893;
+    border: 2px solid #CCCCCC;
     border-radius: 2em;
-    color: #c6b893;
+    color: #CCCCCC;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     cursor: pointer;
 }
+
+@media screen and (min-width: 600px) {
+    .portfolio__video__wrapper {
+        flex-direction: row;
+        padding-block-start: 1em;
+    }
+
+    .portfolio__video__wrapper:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .portfolio__video__text {
+        padding-block-start: 2em;
+    }
+
+    .portfolio__header {
+        padding-block-start: 0.5em;
+    }
+    
+  
+  }

@@ -12,16 +12,31 @@ export default function Portfolio() {
         <h1 className="portfolio__header">What we do</h1>
         <div className="portfolio__wrapper">
           <div className="portfolio__video__wrapper">
-            <video src={Band} muted loop autoPlay />
-            <button className="portfolio__button">Watch here</button>
+            <div className="portfolio__video">
+              <video src={Band} muted loop autoPlay />
+            </div>
+            <div className="portfolio__video__text">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, urna eu viverra pharetra, enim justo pharetra tellus, nec rhoncus nisi nunc non purus. Aliquam.</span>
+              <button className="portfolio__button">Watch here</button>
+            </div>
           </div>
           <div className="portfolio__video__wrapper">
-            <video src={Brioni} muted loop autoPlay  />
-            <button className="portfolio__button">Watch here</button>
+            <div className="portfolio__video">
+              <video src={Brioni} muted loop autoPlay />
+            </div>
+            <div className="portfolio__video__text">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus dui est, in fermentum nisl pellentesque eget. Nunc pellentesque aliquam tellus id volutpat. Aliquam porta.</span>
+              <button className="portfolio__button">Watch here</button>
+            </div>
           </div>
           <div className="portfolio__video__wrapper">
-            <video src={Harajuku} muted loop autoPlay  />
-            <button className="portfolio__button">Watch here</button>
+            <div className="portfolio__video">
+              <video src={Harajuku} muted loop autoPlay />
+            </div>
+            <div className="portfolio__video__text">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio risus, gravida nec elit at, vestibulum gravida orci. Proin id augue sem. Duis vel nisl.</span>
+              <button className="portfolio__button">Watch here</button>
+            </div>
           </div>
         </div>
         <p>
