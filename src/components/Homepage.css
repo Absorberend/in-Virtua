@@ -10,6 +10,7 @@
     filter: FlipH;
     -ms-filter: "FlipH";
     margin-block-end: 0.1em;
+    padding: 2em;
 }
 
 .homepage__section * {
@@ -27,8 +28,9 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-inline-start: 1em;
-    padding-block-end: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .homepage__header h1{
@@ -44,10 +46,6 @@
 
 
 @media screen and (min-width: 600px) {
-    .homepage__header {
-        padding-inline-start: 7.5em;   
-        padding-block-end: 4em;
-    }
 
     .homepage__header h1 {
         font-size: 2.25em;
@@ -56,9 +54,6 @@
 
 
 @media screen and (min-width: 1000px) {
-    .homepage__header {
-        padding-inline-start: 10em;   
-    }
 
     .homepage__header h1 {
         font-size: 2.5em;
@@ -66,24 +61,12 @@
 
     .homepage__header h2 {
         font-size: 1.5em;
-        padding-block-end: 7.5em;
     }
 
 }
 
-@media screen and (min-width: 1200px) {
-    .homepage__header {
-        padding-inline-start: 15em;   
+@media screen and (min-width: 1500px) {
+    .homepage__section {
+        padding: 4em;
     }
-
-    .homepage__header h1 {
-        font-size: 3em;
-    }
-
-    .homepage__header h2 {
-        font-size: 1.75em;
-        text-transform: capitalize;
-        padding-block-end: 7.5em;
-    }
-
 }

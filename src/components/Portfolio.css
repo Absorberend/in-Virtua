@@ -19,6 +19,7 @@
     max-width: 75em;
     padding: 2em;
     text-shadow: 2px 2px black;
+    color: #CCCCCC;
 }
 
 .portfolio__section a {
@@ -47,7 +48,7 @@
     justify-self: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 75em;
+    max-width: 100%;
     padding: 2em;
     background-color: rgba(34,34,34,0.5);
     box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
@@ -55,7 +56,6 @@
 
 .portfolio__video__wrapper {
     width: 100%;
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     flex: 0.5;
@@ -116,7 +116,6 @@ video {
     .portfolio__header {
         padding-block-start: 0.5em;
     }
-    
   
   }
 
@@ -125,15 +124,11 @@ video {
         gap: 2em;
     }
 
-
-  
   }
 
   @media screen and (min-width: 1000px) {
     .portfolio__video__wrapper {
         gap: 6em;
     }
-
-
   
   }
