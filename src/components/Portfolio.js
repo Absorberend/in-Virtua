@@ -25,7 +25,7 @@ export default function Portfolio() {
           </div>
         </div>
         <p>
-          Are you curious what we can do for you?<br />
+          Are you curious about what we can do for you?<br />
           <a href="#contact">Contact us</a> and let's make something special.
         </p>
     </section>
