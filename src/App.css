@@ -45,12 +45,12 @@ body {
 }
 
 .main__content > section:nth-child(2) {
-  height: 300vh;
+  height: 325vh;
 }
 
 @media screen and (min-width: 400px) {
   .main__content > section:nth-child(2) {
-    height: 275vh;
+    height: 300vh;
   }
 
 }
