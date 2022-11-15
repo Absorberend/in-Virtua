@@ -61,3 +61,17 @@ body {
   }
 
 }
+
+@media screen and (min-width: 800px) {
+  .main__content > section:nth-child(2) {
+    height: 150vh;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .main__content > section:nth-child(2) {
+    height: 175vh;
+  }
+
+}
