@@ -17,6 +17,7 @@ function App() {
   const ref = useRef();
   const isVisible = useOnScreen(ref)
 
+
   const handleHamburgerClick = () => {
     setExpandMenu(prevExpandMenu => !prevExpandMenu);
   }

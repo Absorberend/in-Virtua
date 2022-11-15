@@ -3,6 +3,6 @@ import './ProductIntro.css';
 
 export default function ProductIntro() {
   return (
-    <section id="productintro">ProductIntro</section>
+    <section id="productintro" className="product__section">ProductIntro</section>
   )
 }
