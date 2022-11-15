@@ -7,6 +7,7 @@ import Reviews from "./components/Reviews";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
+import VideoModal from "./components/VideoModal";
 import React, {useState, useRef, useEffect} from 'react';
 import useOnScreen from './hooks/useOnScreen';
 
@@ -37,12 +38,13 @@ function App() {
 
   return (
     <>
+      <VideoModal />
       <header>
         <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu} inView={inView} />
       </header>
       <main className="main__content" >
         <div ref={ref}>
-          <Homepage expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick}/>
+          <Homepage />
         </div>
         <Portfolio/>
         <ProductIntro />

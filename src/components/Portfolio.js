@@ -24,6 +24,10 @@ export default function Portfolio() {
             <button className="portfolio__button">Watch here</button>
           </div>
         </div>
+        <p>
+          Are you curious what we can do for you?<br />
+          <a href="#contact">Contact us</a> and let's make something special.
+        </p>
     </section>
   )
 }

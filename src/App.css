@@ -4,8 +4,18 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: rgba(34,34,34,255);
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  position: relative;
 }
 
 .main__content {

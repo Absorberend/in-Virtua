@@ -12,20 +12,35 @@
     background: url('../assets/portfolio-bg.jpg');
     background-size: cover;
     background-position: center;
+    color: #c6b893;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio__section p {
+    padding-block-start: 2em;
+    font-size: 1.25em;
+    max-width: 75em;
+    padding: 2em;
+    text-shadow: 2px 2px black;
+}
+
+.portfolio__section a {
+    text-decoration: underline;
+    color: #c6b893;
 }
 
 .portfolio__header {
-    color: #c6b893;
-    font-family: 'Poppins', sans-serif;
     font-size: 2.75em;
     font-weight: 500;
     width: 100%;
     max-width: 75em;
     text-align: center;
     padding-block-start: 1em;
+    padding-block-end: 0.5em;
     text-transform: capitalize;
     text-shadow: 2px 2px black;
 }
+
 
 .portfolio__wrapper {
     display: flex;
@@ -35,6 +50,9 @@
     align-items: center;
     flex-wrap: wrap;
     max-width: 75em;
+    padding: 2em;
+    background-color: rgba(34,34,34,0.5);
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio__video__wrapper {
@@ -61,6 +79,7 @@ video {
     width: 10em;
     margin: 0 auto;
     background-color: rgba(34,34,34,255);
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
     border: 2px solid #c6b893;
     border-radius: 2em;
     color: #c6b893;
