@@ -38,6 +38,7 @@
     padding-block-start: 1em;
     padding-block-end: 0.5em;
     text-transform: uppercase;
+    font-weight: 600;
     text-shadow: 2px 2px black;
 }
 
