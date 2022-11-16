@@ -32,6 +32,7 @@
 
 .portfolio__section a {
     text-decoration: underline;
+    text-shadow: none;
     color: #c6b893;
 }
 
@@ -113,9 +114,12 @@ video {
 @media screen and (min-width: 600px) {
     .portfolio__video__wrapper {
         flex-direction: row;
-        padding-block-start: 1em;
         min-height: 300px;
         gap: 1em;
+    }
+
+    .portfolio__section p {
+        font-size: 1.25em;
     }
 
     .portfolio__slidecontainer {
