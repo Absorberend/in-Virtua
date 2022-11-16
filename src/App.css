@@ -37,34 +37,3 @@ body {
   scroll-snap-align: start;
 }
 
-.main__content > section:nth-child(2) {
-  height: 325vh;
-}
-
-@media screen and (min-width: 400px) {
-  .main__content > section:nth-child(2) {
-    height: 300vh;
-  }
-
-}
-
-@media screen and (min-width: 600px) {
-  .main__content > section:nth-child(2) {
-    height: 175vh;
-  }
-
-}
-
-@media screen and (min-width: 800px) {
-  .main__content > section:nth-child(2) {
-    height: 200vh;
-  }
-
-}
-
-@media screen and (min-width: 1000px) {
-  .main__content > section:nth-child(2) {
-    height: 225vh;
-  }
-
-}

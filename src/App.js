@@ -15,6 +15,7 @@ function App() {
   const [expandMenu, setExpandMenu] = useState(false);
   const [viewModal, setViewModal] = useState(false);
   const [frameVideo, setFrameVideo] = useState("");
+  const [viewProject, setViewProject] = useState(1);
 
   const handleHamburgerClick = () => {
     setExpandMenu(prevExpandMenu => !prevExpandMenu);
@@ -35,6 +36,9 @@ function App() {
     setViewModal(true);
   }
 
+  const handleSliderChange = (e) => {
+    setViewProject(e);
+  }
 
 
   return (
@@ -45,7 +49,7 @@ function App() {
       </header>
       <main className="main__content" >
         <Homepage />
-        <Portfolio onOpenModal={handleOpenModal} />
+        <Portfolio onOpenModal={handleOpenModal} onSliderChange={handleSliderChange} viewProject={viewProject} />
         <ProductIntro />
         <Reviews />
         <AboutUs />

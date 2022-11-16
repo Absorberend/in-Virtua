@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,13 +12,20 @@
     color: #CCCCCC;
     position: relative;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.portfolio__slidecontainer {
+    width: 100%;
+    max-width: 85em;
+    min-height: 4em;
 }
 
 .portfolio__section p {
     padding-block-start: 2em;
-    font-size: 1.25em;
+    font-size: 1em;
     max-width: 75em;
-    padding: 2em;
+    padding: 0.5em;
     text-shadow: 2px 2px black;
     color: #CCCCCC;
 }
@@ -30,7 +37,7 @@
 
 .portfolio__header {
     color: #CCCCCC;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 500;
     width: 100%;
     max-width: 75em;
@@ -42,24 +49,13 @@
     text-shadow: 2px 2px black;
 }
 
-
-.portfolio__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-self: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 100%;
-    gap: 2em;
-}
-
 .portfolio__video__wrapper {
     width: 100%;
+    min-height: 440px;
     display: flex;
     flex-direction: column;
     flex: 0.5;
-    gap: 1em;
+    gap: 0.5em;
     margin: 0 auto;
     padding-block-start: 3em;
     padding: 2em;
@@ -72,7 +68,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
     gap: 1em;
     text-align: center;
     text-shadow: 2px 2px black;
@@ -81,7 +76,8 @@
 .portfolio__video {
     width: 100%;
     height: 100%;
-    max-width: 600px;
+    display: flex;
+    align-self: center;
 }
 
 video {
@@ -104,18 +100,35 @@ video {
     text-shadow: 2px 2px black;
 }
 
+@media screen and (min-width: 480px) {
+    .portfolio__video__wrapper {
+        min-height: 480px;
+    }
+
+    .portfolio__section p {
+        padding-block-start: 2em;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .portfolio__video__wrapper {
         flex-direction: row;
         padding-block-start: 1em;
+        min-height: 300px;
+        gap: 1em;
+    }
+
+    .portfolio__slidecontainer {
+        min-height: 8em;
     }
 
     .portfolio__header {
         font-size: 2.25em;
     }
 
-    .portfolio__video__wrapper:nth-child(2) {
-        flex-direction: row-reverse;
+    .portfolio__flex__reverse {
+        display: flex;
+        flex-direction: row-reverse !important;
     }
 
     .portfolio__video__text {
@@ -129,8 +142,10 @@ video {
   }
 
   @media screen and (min-width: 800px) {
+
     .portfolio__video__wrapper {
         gap: 2em;
+        max-width: 85em;
     }
 
     .portfolio__button {
