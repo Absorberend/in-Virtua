@@ -5,7 +5,7 @@ import hamburger from "../assets/menu-2.svg";
 import useOutsideClick from "../hooks/useOutsideClick.js";
 import useCloseOnEsc from '../hooks/useCloseOnEsc';
 
-export default function Nav({expandMenu, onHamburgerClick, onCloseMenu, inView}) {
+export default function Nav({expandMenu, onHamburgerClick, onCloseMenu}) {
     const ref = useRef();
 
     useOutsideClick(ref, () => onCloseMenu());
@@ -17,9 +17,8 @@ export default function Nav({expandMenu, onHamburgerClick, onCloseMenu, inView})
         // eslint-disable-next-line
     }, []);
 
-
     return (
-        <div className={inView && !expandMenu ? "nav__section nav__section__invis" : "nav__section nav__section__vis"}>
+        <div className="nav__section nav__section__vis">
             <div className="nav__logo__wrapper">
                 <a href="#homepage">
                     <img src={logo} className="nav__logo" alt="logo"/>

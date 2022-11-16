@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: rgba(34,34,34,255);
+  background-color: rgba(35,40,44,255);
   height: 100%;
 }
 
@@ -29,13 +29,6 @@ body {
 
 .main__content::-webkit-scrollbar {
   display: none;
-}
-
-
-.main__content div > section {
-  height: 100vh;
-  padding-block-start: 4.75em;
-  scroll-snap-align: start;
 }
 
 .main__content > section {

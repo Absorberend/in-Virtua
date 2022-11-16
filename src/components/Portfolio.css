@@ -9,7 +9,8 @@
     background: url('../assets/portfolio-bg.jpg');
     background-size: cover;
     background-position: center;
-    color: #c6b893;
+    color: #CCCCCC;
+    position: relative;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -29,14 +30,14 @@
 
 .portfolio__header {
     color: #CCCCCC;
-    font-size: 2.75em;
+    font-size: 2em;
     font-weight: 500;
     width: 100%;
     max-width: 75em;
     text-align: center;
     padding-block-start: 1em;
     padding-block-end: 0.5em;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-shadow: 2px 2px black;
 }
 
@@ -49,9 +50,7 @@
     align-items: center;
     flex-wrap: wrap;
     max-width: 100%;
-    padding: 2em;
-    background-color: rgba(34,34,34,0.5);
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
+    gap: 2em;
 }
 
 .portfolio__video__wrapper {
@@ -62,6 +61,10 @@
     gap: 1em;
     margin: 0 auto;
     padding-block-start: 3em;
+    padding: 2em;
+    background-color: rgba(35,40,44, 0.5);
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 .portfolio__video__text {
@@ -89,20 +92,25 @@ video {
     height: 2.5em;
     width: 10em;
     margin: 0 auto;
-    background-color: rgba(34,34,34,255);
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
-    border: 2px solid #CCCCCC;
+    background-color: inherit;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.1);
+    border: 2px solid #c6b893;
     border-radius: 2em;
-    color: #CCCCCC;
+    color: #c6b893;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     cursor: pointer;
+    text-shadow: 2px 2px black;
 }
 
 @media screen and (min-width: 600px) {
     .portfolio__video__wrapper {
         flex-direction: row;
         padding-block-start: 1em;
+    }
+
+    .portfolio__header {
+        font-size: 2.25em;
     }
 
     .portfolio__video__wrapper:nth-child(2) {
@@ -124,6 +132,11 @@ video {
         gap: 2em;
     }
 
+    .portfolio__button {
+        height: 3.5em;
+        width: 12.5em;
+    }
+
   }
 
   @media screen and (min-width: 1000px) {
@@ -131,4 +144,7 @@ video {
         gap: 6em;
     }
   
+    .portfolio__header {
+        font-size: 2.5em;
+    }
   }

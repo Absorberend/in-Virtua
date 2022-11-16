@@ -8,16 +8,11 @@ import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 import VideoModal from "./components/VideoModal";
-import React, {useState, useRef, useEffect} from 'react';
-import useOnScreen from './hooks/useOnScreen';
+import React, {useState} from 'react';
 
 
 function App() {
   const [expandMenu, setExpandMenu] = useState(false);
-  const [inView, setInView] = useState(false);
-  const ref = useRef();
-  const isVisible = useOnScreen(ref)
-
 
   const handleHamburgerClick = () => {
     setExpandMenu(prevExpandMenu => !prevExpandMenu);
@@ -27,25 +22,16 @@ function App() {
     setExpandMenu(false);
   }
 
-  useEffect(() => {
-    if (isVisible) {
-      setInView(true);
-    } else {
-      setInView(false);
-    }
-  }, [isVisible])
 
 
   return (
     <>
       <VideoModal />
       <header>
-        <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu} inView={inView} />
+        <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu}/>
       </header>
       <main className="main__content" >
-        <div ref={ref}>
-          <Homepage />
-        </div>
+        <Homepage />
         <Portfolio/>
         <ProductIntro />
         <Reviews />

@@ -9,7 +9,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="portfolio__section">
-        <h1 className="portfolio__header">What we do</h1>
+        <h1 className="portfolio__header">What we do.</h1>
         <div className="portfolio__wrapper">
           <div className="portfolio__video__wrapper">
             <div className="portfolio__video">
@@ -17,7 +17,7 @@ export default function Portfolio() {
             </div>
             <div className="portfolio__video__text">
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, urna eu viverra pharetra, enim justo pharetra tellus, nec rhoncus nisi nunc non purus. Aliquam.</span>
-              <button className="portfolio__button">Watch here</button>
+              <button className="portfolio__button">Watch video</button>
             </div>
           </div>
           <div className="portfolio__video__wrapper">
@@ -26,7 +26,7 @@ export default function Portfolio() {
             </div>
             <div className="portfolio__video__text">
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus dui est, in fermentum nisl pellentesque eget. Nunc pellentesque aliquam tellus id volutpat. Aliquam porta.</span>
-              <button className="portfolio__button">Watch here</button>
+              <button className="portfolio__button">Watch video</button>
             </div>
           </div>
           <div className="portfolio__video__wrapper">
@@ -35,12 +35,12 @@ export default function Portfolio() {
             </div>
             <div className="portfolio__video__text">
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio risus, gravida nec elit at, vestibulum gravida orci. Proin id augue sem. Duis vel nisl.</span>
-              <button className="portfolio__button">Watch here</button>
+              <button className="portfolio__button">Watch video</button>
             </div>
           </div>
         </div>
         <p>
-          Are you curious about what we can do for you?<br />
+          Are you curious about what we can do for you? &nbsp;
           <a href="#contact">Contact us</a> and let's make something special.
         </p>
     </section>
