@@ -13,6 +13,8 @@ import React, {useState} from 'react';
 
 function App() {
   const [expandMenu, setExpandMenu] = useState(false);
+  const [viewModal, setViewModal] = useState(false);
+  const [frameVideo, setFrameVideo] = useState("");
 
   const handleHamburgerClick = () => {
     setExpandMenu(prevExpandMenu => !prevExpandMenu);
@@ -22,17 +24,28 @@ function App() {
     setExpandMenu(false);
   }
 
+  const handleCloseModal = () => {
+    setFrameVideo("");
+    setViewModal(false);
+  }
+
+  const handleOpenModal = (e) => {
+    setExpandMenu(false);
+    setFrameVideo(e);
+    setViewModal(true);
+  }
+
 
 
   return (
     <>
-      <VideoModal />
+      {viewModal && <VideoModal onCloseModal={handleCloseModal} frameVideo={frameVideo} />}
       <header>
         <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu}/>
       </header>
       <main className="main__content" >
         <Homepage />
-        <Portfolio/>
+        <Portfolio onOpenModal={handleOpenModal} />
         <ProductIntro />
         <Reviews />
         <AboutUs />

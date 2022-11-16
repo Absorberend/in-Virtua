@@ -5,7 +5,7 @@ import Harajuku from "../assets/videos/harajuku.mp4";
 import "./Portfolio.css";
 
 
-export default function Portfolio() {
+export default function Portfolio({onOpenModal}) {
 
   return (
     <section id="portfolio" className="portfolio__section">
@@ -17,7 +17,7 @@ export default function Portfolio() {
             </div>
             <div className="portfolio__video__text">
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, urna eu viverra pharetra, enim justo pharetra tellus, nec rhoncus nisi nunc non purus. Aliquam.</span>
-              <button className="portfolio__button">Watch video</button>
+              <button className="portfolio__button" data-link="rcniHWJWPF0" onClick={(e) => onOpenModal(e.currentTarget.dataset.link)}>Watch video</button>
             </div>
           </div>
           <div className="portfolio__video__wrapper">
@@ -26,7 +26,7 @@ export default function Portfolio() {
             </div>
             <div className="portfolio__video__text">
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus dui est, in fermentum nisl pellentesque eget. Nunc pellentesque aliquam tellus id volutpat. Aliquam porta.</span>
-              <button className="portfolio__button">Watch video</button>
+              <button className="portfolio__button" data-link="FAR08NY5dyM" onClick={(e) => onOpenModal(e.currentTarget.dataset.link)}>Watch video</button>
             </div>
           </div>
           <div className="portfolio__video__wrapper">
@@ -35,7 +35,7 @@ export default function Portfolio() {
             </div>
             <div className="portfolio__video__text">
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio risus, gravida nec elit at, vestibulum gravida orci. Proin id augue sem. Duis vel nisl.</span>
-              <button className="portfolio__button">Watch video</button>
+              <button className="portfolio__button" data-link="G3D-UoqhFEA" onClick={(e) => onOpenModal(e.currentTarget.dataset.link)}>Watch video</button>
             </div>
           </div>
         </div>
