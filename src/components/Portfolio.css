@@ -43,7 +43,7 @@
     width: 100%;
     max-width: 75em;
     text-align: center;
-    padding-block-start: 1em;
+    padding-block-start: 0;
     padding-block-end: 0.5em;
     text-transform: uppercase;
     font-weight: 600;
@@ -52,14 +52,14 @@
 
 .portfolio__video__wrapper {
     width: 100%;
-    min-height: 440px;
+    min-height: 415px;
     display: flex;
     flex-direction: column;
     flex: 0.5;
     gap: 0.5em;
     margin: 0 auto;
     padding-block-start: 3em;
-    padding: 2em;
+    padding: 1em;
     background-color: rgba(35,40,44, 0.5);
     box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -104,6 +104,11 @@ video {
 @media screen and (min-width: 480px) {
     .portfolio__video__wrapper {
         min-height: 480px;
+        padding: 2em;
+    }
+
+    .portfolio__header {
+        padding-block-start: 0.5em;
     }
 
     .portfolio__section p {
