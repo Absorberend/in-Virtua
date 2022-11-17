@@ -85,6 +85,7 @@
     height: 21em;
     background-color: #23282c;
     z-index: 5;
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.1);
 }
 
 .nav__link::after {
