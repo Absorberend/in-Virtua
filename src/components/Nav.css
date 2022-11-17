@@ -91,7 +91,7 @@
     margin: 0 auto;
     content: '';
     width: 0px;
-    height: 1.5px;
+    height: 2px;
     display: block;
     background: #c6b893;
     transition: 500ms;
@@ -113,6 +113,14 @@
         align-items: center;
         gap: 3em;
         height: 4.75em;
+    }
+
+    .nav__links__active {
+        top: 4.75em;
+    }
+    
+    .nav__links__bg {
+        top: 4.75em;
     }
 
     .nav__hamburger {
