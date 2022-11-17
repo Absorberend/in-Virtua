@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    padding: 1em;
+    padding: 0.75em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,12 +18,12 @@
 .portfolio__slidecontainer {
     width: 100%;
     max-width: 85em;
-    min-height: 4em;
+    min-height: 3.25em;
 }
 
 .portfolio__section p {
     padding-block-start: 2em;
-    font-size: 1em;
+    font-size: 0.85em;
     max-width: 75em;
     padding: 0.5em;
     text-shadow: 2px 2px black;
@@ -44,7 +44,7 @@
     max-width: 75em;
     text-align: center;
     padding-block-start: 0;
-    padding-block-end: 0.5em;
+    padding-block-end: 0;
     text-transform: uppercase;
     font-weight: 600;
     text-shadow: 2px 2px black;
@@ -102,17 +102,27 @@ video {
 }
 
 @media screen and (min-width: 480px) {
+    .portfolio__section {
+        padding: 1em;
+    }
+
     .portfolio__video__wrapper {
         min-height: 480px;
         padding: 2em;
     }
 
+    .portfolio__slidecontainer {
+        min-height: 4em;
+    }
+
     .portfolio__header {
         padding-block-start: 0.5em;
+        padding-block-end: 0.5em;
     }
 
     .portfolio__section p {
         padding-block-start: 2em;
+        font-size: 1em;
     }
 }
 
