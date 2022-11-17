@@ -42,6 +42,10 @@
     filter: invert(79%) sepia(35%) saturate(235%) hue-rotate(6deg) brightness(88%) contrast(88%);
 }
 
+.nav__links a {
+    text-decoration: none;
+}
+
 .nav__links {
     width: 100%;
     display: none;
