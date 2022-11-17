@@ -117,17 +117,12 @@
     
     .nav__links {
         display: flex;
+        height: 100%;
+        align-items: center;
     }
 
     .nav__link:hover::after {
         width: 100%;
     }
 
-    .nav__links__active {
-        top: 4.75em; 
-    }
-
-    .nav__links__bg {
-        top: 4.75em;
-    }
 }

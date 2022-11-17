@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import Band from "../assets/videos/band.mp4";
 import Brioni from "../assets/videos/brioni2man.mp4";
 import Harajuku from "../assets/videos/harajuku.mp4";

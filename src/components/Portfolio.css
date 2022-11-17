@@ -39,7 +39,6 @@
 .portfolio__header {
     color: #CCCCCC;
     font-size: 1.5em;
-    font-weight: 500;
     width: 100%;
     max-width: 75em;
     text-align: center;
@@ -107,21 +106,21 @@ video {
     }
 
     .portfolio__video__wrapper {
-        min-height: 480px;
+        min-height: 420px;
         padding: 2em;
     }
 
     .portfolio__slidecontainer {
-        min-height: 4em;
+        min-height: 3.5em;
     }
 
     .portfolio__header {
-        padding-block-start: 0.5em;
-        padding-block-end: 0.5em;
+        padding-block-start: 0.25em;
+        padding-block-end: 0.25em;
     }
 
     .portfolio__section p {
-        padding-block-start: 2em;
+        padding-block-start: 0.75em;
         font-size: 1em;
     }
 }
@@ -135,6 +134,7 @@ video {
 
     .portfolio__section p {
         font-size: 1.25em;
+        padding-block-start: 1.5em;
     }
 
     .portfolio__slidecontainer {
@@ -143,6 +143,8 @@ video {
 
     .portfolio__header {
         font-size: 2.25em;
+        padding-block-start: 0.5em;
+        padding-block-end: 0.5em;
     }
 
     .portfolio__flex__reverse {
