@@ -1,5 +1,6 @@
 .review__section {
     position: relative;
+    overflow: hidden;
 }
 
 .slideshow__container {
@@ -133,6 +134,21 @@ q {
     }
 
   }
+
+  @media only screen and (min-width: 800px) {
+    .mySlides {
+        padding: 0 10rem;
+    }
+
+    q {
+        font-size: 2em;
+    }
+
+    .author {
+        font-size: 2em;
+    }
+
+}
 
 
 @media only screen and (min-width: 1000px) {
