@@ -1,4 +1,4 @@
-import React  from 'react'
+import React, { useEffect }  from 'react'
 import Band from "../assets/videos/band.mp4";
 import Brioni from "../assets/videos/brioni2man.mp4";
 import Harajuku from "../assets/videos/harajuku.mp4";
@@ -12,7 +12,7 @@ export default function Portfolio({onOpenModal, onSliderChange, viewProject}) {
     <section id="portfolio" className="portfolio__section">
         <h1 className="portfolio__header">What we do.</h1>
         <div className="portfolio__slidecontainer">
-          <Slider onSliderChange={onSliderChange} />
+          <Slider onSliderChange={onSliderChange} viewProject={viewProject}/>
         </div>
         <div className="portfolio__wrapper">
           {viewProject === 1 && <div className="portfolio__video__wrapper">

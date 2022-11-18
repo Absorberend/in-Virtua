@@ -4,10 +4,13 @@
     --track-color: rgb(136, 133, 133);
 }
 
-.customSlider {
+.slider__container {
+    width: 100%;
+    height: 100%;
     max-width: 50%;
     width: 50%;
     margin: 0 auto;
+    position: relative;
 }
 
 .customSlider-track {
@@ -17,6 +20,7 @@
     background: var(--track-color);
     box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.1);
     border-radius: 2em;
+    z-index: 1;
 }
 
 .customSlider-track.customSlider-track-0 {
@@ -49,11 +53,51 @@
     color: #c6b893;
 }
 
+.slider__arrow {
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    width: 2em;
+    filter: invert(79%) sepia(22%) saturate(360%) hue-rotate(6deg) brightness(91%) contrast(87%);
+}
+
+.marks__container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.4em 1em 0 1em;
+}
+
+.example-mark {
+    width: 0.2em;
+    border: 1px solid black;
+    height: 2em;
+    background-color: #c6b893;
+}
+
+@media screen and (min-width: 480px) {
+    .slider__arrow {
+        left: 45%;
+        top: 10%;
+    }
+}
 
 @media screen and (min-width: 600px) {
     .customSlider-track {
         top: 1.5em;
         height: 2em;
+    }
+
+    .marks__container {
+        padding: 0.4em 1.5em 0 1.5em;
+    }
+
+    .example-mark {
+        width: 0.25em;
+        border: 1px solid black;
+        height: 4.5em;
+        background-color: #c6b893;
     }
 
     .customSlider-thumb {
@@ -63,5 +107,10 @@
 
     .customSlider-thumb-value {
         font-size: 3em;
+    }
+
+    .slider__arrow {
+        top: 12.5%;
+        width: 3em;
     }
 }
