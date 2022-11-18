@@ -5,7 +5,7 @@
 /* Slideshow container */
 .slideshow__container {
     width: 100vw;
-    height: calc(100% - 4em);
+    height: calc(100% - 8em);
     align-items: center;
     position: relative;
     background: #23282c;
@@ -68,6 +68,7 @@
 .dot__container {
     text-align: center;
     padding: 20px;
+    height: 8em;
     background: #23282c;
     width: 100%;
     position: absolute;
