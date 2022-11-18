@@ -10,6 +10,7 @@ export default function useKeyPress(callback) {
       
               callback();
             } 
+
           };
 
           document.addEventListener('keydown', keyDownHandler);

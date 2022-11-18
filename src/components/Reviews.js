@@ -30,43 +30,37 @@ export default function Reviews() {
   const [quote, getQuote] = useState(quoteData[current])
   
   useEffect(
-    () => getQuote(quoteData[current]), 
+    () => {
+      getQuote(quoteData[current]);
+      window.addEventListener("keydown", handleKeyPress);
+    
+      return () => {
+        window.removeEventListener("keydown", handleKeyPress);
+      };
+
+    }, 
     [current, quote]
   )
 
   useEffect(() => {
-    window.addEventListener("keydown", handleKeyPress);
-    // Remove event listeners on cleanup
-    return () => {
-      window.removeEventListener("keydown", handleKeyPress);
-    };
-  }, []); 
 
-  function handleKeyPress(e) {
-    if (e.key === 'ArrowLeft') {
-      console.log(current);
-      nextQuote();
-    } else if (e.key === 'ArrowRight') {
-      console.log(current);
-      prevQuote();
-    }
-  }
+  }, []); 
   
   const nextQuote = () => {
     current === quoteData.length-1 ?
       setCurrent(0)
     :
-      setCurrent(current + 1)
+      setCurrent(prevCurrent => prevCurrent + 1)
   }
   
   const prevQuote = () => {
     current === 0 ?
       setCurrent(quoteData.length-1)
     :
-      setCurrent(current - 1)
+      setCurrent(prevCurrent => prevCurrent - 1)
   }
   
-  const dotPicksQuote = (e) => setCurrent(Number(e.target.id))
+  const dotPicksQuote = (e) => setCurrent(Number(e.target.id));
 
   function Slide({quote}) {
     return (
@@ -84,6 +78,17 @@ export default function Reviews() {
         <a onClick={nextQuote} className="next" id="next">&#10095;</a>
       </>
     )
+  }
+
+  
+  function handleKeyPress(e) {
+    if (e.key === 'ArrowLeft') {
+      prevQuote();
+    } 
+    
+    if (e.key === 'ArrowRight') {
+      nextQuote();
+    }
   }
   
   function Dots({dotQty, current, dotPicksQuote}) {
