@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import useOutsideClick from "../hooks/useOutsideClick.js";
-import useCloseOnEsc from '../hooks/useCloseOnEsc';
+import useKeyPress from '../hooks/useKeyPress';
 import closeIcon from "../assets/close-icon.svg";
 
 import "./VideoModal.css";
@@ -9,7 +9,7 @@ export default function VideoModal({onCloseModal, frameVideo}) {
   const ref = useRef();
 
   useOutsideClick(ref, () => onCloseModal());
-  useCloseOnEsc(() => onCloseModal());
+  useKeyPress(() => onCloseModal());
 
   return (
     <div className="video__modal__container">

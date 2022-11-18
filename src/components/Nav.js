@@ -3,13 +3,13 @@ import "./Nav.css";
 import logo from "../assets/logo.png";
 import hamburger from "../assets/menu-2.svg";
 import useOutsideClick from "../hooks/useOutsideClick.js";
-import useCloseOnEsc from '../hooks/useCloseOnEsc';
+import useKeyPress from '../hooks/useKeyPress';
 
 export default function Nav({expandMenu, onHamburgerClick, onCloseMenu}) {
     const ref = useRef();
 
     useOutsideClick(ref, () => onCloseMenu());
-    useCloseOnEsc(() => onCloseMenu());
+    useKeyPress(() => onCloseMenu());
 
     useEffect(() => {
         window.matchMedia("(max-width: 600px)").addEventListener("change", () => onCloseMenu());

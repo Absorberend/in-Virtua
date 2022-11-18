@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 
-export default function useCloseOnEsc(callback) {
+export default function useKeyPress(callback) {
     useEffect(() => {
         const keyDownHandler = event => {
       
@@ -9,7 +9,7 @@ export default function useCloseOnEsc(callback) {
               event.preventDefault();
       
               callback();
-            }
+            } 
           };
 
           document.addEventListener('keydown', keyDownHandler);
