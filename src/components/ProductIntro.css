@@ -36,7 +36,7 @@
     max-width: 75em;
     text-align: center;
     padding-block-start: 0;
-    padding-block-end: 1em;
+    padding-block-end: 0.25em;
     text-transform: uppercase;
     font-weight: 600;
     text-shadow: 2px 2px black;
@@ -70,29 +70,13 @@
     filter: invert(79%) sepia(22%) saturate(360%) hue-rotate(6deg) brightness(91%) contrast(87%);
 }
 
-@media screen and (min-width: 480px) {
-
-    .product__section {
-        padding: 1em;
-    }
-
-    .product__text {
-        font-size: 0.925em;
-    }
-}
-
 @media screen and (min-width: 600px) {
     .product__section {
         background-position: center right;
     }
 
-    .product__steps__container {
-        gap: 2.1em;
-        padding-block-start: 2em;
-    }
-
     .product__text {
-        font-size: 1em;
+        font-size: 0.925em;
     }
 
     .product__header {

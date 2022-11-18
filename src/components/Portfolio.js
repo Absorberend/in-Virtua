@@ -43,10 +43,6 @@ export default function Portfolio({onOpenModal, onSliderChange, viewProject}) {
             </div>
           </div>}
         </div>
-        <p>
-          Are you curious about what we can do for you? &nbsp;
-          <a href="#contact">Contact us</a> and let's make something special.
-        </p>
     </section>
   )
 }

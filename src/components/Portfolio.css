@@ -21,15 +21,6 @@
     min-height: 3.25em;
 }
 
-.portfolio__section p {
-    padding-block-start: 2em;
-    font-size: 0.85em;
-    max-width: 75em;
-    padding: 0.5em;
-    text-shadow: 2px 2px black;
-    color: #CCCCCC;
-}
-
 .portfolio__section a {
     text-decoration: underline;
     text-shadow: none;
@@ -117,11 +108,6 @@ video {
     .portfolio__header {
         padding-block-start: 0.25em;
         padding-block-end: 0.25em;
-    }
-
-    .portfolio__section p {
-        padding-block-start: 0.75em;
-        font-size: 1em;
     }
 }
 
