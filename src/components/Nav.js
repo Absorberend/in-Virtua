@@ -30,10 +30,10 @@ export default function Nav({expandMenu, onHamburgerClick, onCloseMenu}) {
                 </button>
                 <div className={expandMenu ? "nav__links nav__links__active" : "nav__links"} ref={ref}>
                     <a href="#homepage" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">Home</a>
+                    <a href="#aboutus" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">About</a>
                     <a href="#portfolio" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">Portfolio</a>
                     <a href="#productintro" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">Product</a>
                     <a href="#reviews" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">Reviews</a>
-                    <a href="#aboutus" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">About</a>
                     <a href="#contact" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">Contact</a>
                 </div>
                 <div className={expandMenu ? "nav__links__bg" : ""}></div>

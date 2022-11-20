@@ -49,10 +49,10 @@ function App() {
       </header>
       <main className="main__content" >
         <Homepage />
+        <AboutUs />
         <Portfolio onOpenModal={handleOpenModal} onSliderChange={handleSliderChange} viewProject={viewProject} />
         <ProductIntro />
         <Reviews />
-        <AboutUs />
         <Contact />
       </main>
     </>
