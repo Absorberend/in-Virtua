@@ -2,7 +2,7 @@ import React from 'react'
 import './Homepage.css';
 import MovingComponent from 'react-moving-text';
 
-export default function Homepage() {
+export default function Homepage({expandMenu, onHamburgerClick}) {
 
   return (
     <section className="homepage__section" id="homepage">
@@ -17,7 +17,7 @@ export default function Homepage() {
           fillMode="none">
           <h1>People. Together.</h1>
           <h2>Share your special moments</h2>
-          {/* <a href="#portfolio" onClick={expandMenu ? onHamburgerClick : undefined} className="nav__link">Portfolio</a> */}
+          <div><a href="#portfolio" onClick={expandMenu ? onHamburgerClick : undefined} className="homepage__link">Portfolio</a></div>
         </MovingComponent>
       </div>
     </section>

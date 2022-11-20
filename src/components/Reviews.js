@@ -83,10 +83,12 @@ export default function Reviews() {
   
   function handleKeyPress(e) {
     if (e.key === 'ArrowLeft') {
+      e.preventDefault();
       prevQuote();
     } 
     
     if (e.key === 'ArrowRight') {
+      e.preventDefault();
       nextQuote();
     }
   }

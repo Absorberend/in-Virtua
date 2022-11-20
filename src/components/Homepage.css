@@ -42,6 +42,25 @@
     font-size: 1.25em;
     text-transform: capitalize;
     font-weight: 500;
+    padding-block-end: 3em;
+}
+
+.homepage__link {
+    text-decoration: none;
+    height: 2.5em;
+    width: 10em;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    background-color: inherit;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.1);
+    border: 2px solid #c6b893;
+    border-radius: 2em;
+    color: #c6b893;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
 }
 
 
@@ -61,6 +80,10 @@
 
     .homepage__header h2 {
         font-size: 1.5em;
+    }
+
+    .homepage__link {
+        font-size: 1.2em;
     }
 
 }

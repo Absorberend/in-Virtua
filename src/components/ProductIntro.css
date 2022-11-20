@@ -84,6 +84,14 @@
   
   }
 
+  @media screen and (min-width: 800px) {
+    .product__steps__container {
+        gap: 2.2em;
+    }
+
+  
+  }
+
   @media screen and (min-width: 1000px) {
     .product__section {
         background-position: right;
@@ -99,7 +107,7 @@
     }
 
     .product__text {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .product__step__icon {
@@ -108,4 +116,11 @@
         transform: translate(-50%, -50%);
         opacity: 0.8;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .product__text {
+        font-size: 1.2em;
+    }
+
   }

@@ -48,7 +48,7 @@ function App() {
         <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu}/>
       </header>
       <main className="main__content" >
-        <Homepage />
+        <Homepage expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} />
         <AboutUs />
         <Portfolio onOpenModal={handleOpenModal} onSliderChange={handleSliderChange} viewProject={viewProject} />
         <ProductIntro />
