@@ -17,20 +17,20 @@ export default function Portfolio({onOpenModal, onSliderChange, viewProject}) {
         <div className="portfolio__wrapper">
           {viewProject === 1 && <div className="portfolio__video__wrapper">
             <div className="portfolio__video">
-              <video src={Band} muted loop autoPlay />
-            </div>
-            <div className="portfolio__video__text">
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, urna eu viverra pharetra, enim justo pharetra tellus, nec rhoncus nisi nunc non purus. Aliquam.</span>
-              <button className="portfolio__button" data-link="rcniHWJWPF0" onClick={(e) => onOpenModal(e.currentTarget.dataset.link)}>Watch video</button>
-            </div>
-          </div>}
-          {viewProject === 2 && <div className="portfolio__video__wrapper portfolio__flex__reverse">
-            <div className="portfolio__video">
               <video src={Brioni} muted loop autoPlay />
             </div>
             <div className="portfolio__video__text">
               <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus dui est, in fermentum nisl pellentesque eget. Nunc pellentesque aliquam tellus id volutpat.</span>
               <button className="portfolio__button" data-link="FAR08NY5dyM" onClick={(e) => onOpenModal(e.currentTarget.dataset.link)}>Watch video</button>
+            </div>
+          </div>}
+          {viewProject === 2 && <div className="portfolio__video__wrapper portfolio__flex__reverse">
+            <div className="portfolio__video">
+              <video src={Band} muted loop autoPlay />
+            </div>
+            <div className="portfolio__video__text">
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, urna eu viverra pharetra, enim justo pharetra tellus, nec rhoncus nisi nunc non purus. Aliquam.</span>
+              <button className="portfolio__button" data-link="rcniHWJWPF0" onClick={(e) => onOpenModal(e.currentTarget.dataset.link)}>Watch video</button>
             </div>
           </div>}
           {viewProject === 3 && <div className="portfolio__video__wrapper">

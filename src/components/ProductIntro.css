@@ -10,7 +10,7 @@
     overflow: hidden;
     background-image: url('../assets/product-bg.jpg');
     background-size: cover;
-    background-position: center right;
+    background-position: center;
 }
 
 .product__steps__container {
@@ -69,9 +69,6 @@
 }
 
 @media screen and (min-width: 600px) {
-    .product__section {
-        background-position: center right;
-    }
 
     .product__text {
         font-size: 0.85em;
