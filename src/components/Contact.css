@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    background-image: url('../assets/product-bg.jpg');
+    background-image: url('../assets/contact-bg.jpg');
     background-size: cover;
     background-position: center;
 }
