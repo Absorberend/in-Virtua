@@ -97,8 +97,9 @@
 
     .example-mark {
         width: 0.25em;
+        margin-block-start: 0.7em;
         border: 1px solid black;
-        height: 4.5em;
+        height: 3em;
         background-color: #c6b893;
     }
 
