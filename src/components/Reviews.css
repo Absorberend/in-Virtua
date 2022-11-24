@@ -49,6 +49,8 @@
     font-size: 5vw;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: transparent;
+    border: none;
 }
 
 .next {

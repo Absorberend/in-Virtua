@@ -25,6 +25,7 @@ export default function Reviews() {
     }  
   ];
   
+  // eslint-disable-next-line
   const [quoteData, getQuoteData] = useState(quotes);
   const [current, setCurrent] = useState(0);
   const [quote, getQuote] = useState(quoteData[current])
@@ -39,6 +40,7 @@ export default function Reviews() {
       };
 
     }, 
+     // eslint-disable-next-line
     [current, quote]
   )
 
@@ -74,8 +76,8 @@ export default function Reviews() {
   function Arrows({nextQuote, prevQuote}) {
     return (
       <>    
-        <a onClick={prevQuote} className="prev" id="prev">&#10094;</a>
-        <a onClick={nextQuote} className="next" id="next">&#10095;</a>
+        <button onClick={prevQuote} className="prev" id="prev">&#10094;</button>
+        <button onClick={nextQuote} className="next" id="next">&#10095;</button>
       </>
     )
   }
