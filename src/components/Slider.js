@@ -19,7 +19,13 @@ export default function Slider({onSliderChange, viewProject}) {
         <div className="example-mark" />
         <div className="example-mark" />
         <div className="example-mark" />
-        {viewProject === 1 && <img src={arrowRight} alt="slide to the right" className="slider__arrow"/>}
+        {viewProject === 1 && (
+          <img 
+            src={arrowRight} 
+            alt="slide to the right" 
+            className="slider__arrow"
+          />
+        )}
       </div>
     </div>
   )

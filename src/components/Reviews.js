@@ -80,7 +80,6 @@ export default function Reviews() {
     )
   }
 
-  
   function handleKeyPress(e) {
     if (e.key === 'ArrowLeft') {
       e.preventDefault();

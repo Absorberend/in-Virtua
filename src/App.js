@@ -40,17 +40,29 @@ function App() {
     setViewProject(e);
   }
 
-
   return (
     <>
-      {viewModal && <VideoModal onCloseModal={handleCloseModal} frameVideo={frameVideo} />}
+      {viewModal && (
+        <VideoModal onCloseModal={handleCloseModal} frameVideo={frameVideo} />
+      )}
       <header>
-        <Nav expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} onCloseMenu={handleCloseMenu}/>
+        <Nav 
+          expandMenu={expandMenu} 
+          onHamburgerClick={handleHamburgerClick} 
+          onCloseMenu={handleCloseMenu}
+        />
       </header>
       <main className="main__content" >
-        <Homepage expandMenu={expandMenu} onHamburgerClick={handleHamburgerClick} />
+        <Homepage 
+          expandMenu={expandMenu} 
+          onHamburgerClick={handleHamburgerClick} 
+        />
         <AboutUs />
-        <Portfolio onOpenModal={handleOpenModal} onSliderChange={handleSliderChange} viewProject={viewProject} />
+        <Portfolio 
+          onOpenModal={handleOpenModal} 
+          onSliderChange={handleSliderChange} 
+          viewProject={viewProject} 
+        />
         <ProductIntro />
         <Reviews />
         <Contact />
