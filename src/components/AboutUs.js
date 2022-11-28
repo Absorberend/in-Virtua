@@ -2,12 +2,13 @@ import React from 'react'
 import About from "../assets/about.jpg"
 import './AboutUs.css';
 
+
 export default function AboutUs() {
   return (
     <section id="aboutus" className="about__section" >
       <div className="about__wrapper">
         <div className="about__img__wrapper">
-          <img 
+          <img
             src={About} 
             alt="In-Virtua team" 
             className="about__img" 
